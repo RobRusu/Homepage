@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: headings;
+  src: url(./fonts/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: content;
+  src: url(./fonts/Lora-VariableFont_wght.ttf);
+}
+
 :root {
   background-color: #22a4b3;
   display: flex;
@@ -44,6 +54,7 @@ header {
   font-size: min(1.5vh, 1.5vw);
   background: rgba(0, 0, 0, 0.5);
   padding: min(0.8vh, 0.8vw);
+  font-family: headings;
 }
 
 .about {
@@ -59,13 +70,16 @@ header {
 }
 
 .about > p,
-.projectDescription,
 .contacts {
   font-size: min(1.1vh, 1.1vw);
 }
 
-.about > h1 {
-  margin-bottom: 1vh;
+.projectDescription {
+  font-size: min(1vh, 1vw);
+}
+
+.about > h2 {
+  margin-bottom: 0.5vh;
 }
 
 .links {
@@ -97,10 +111,17 @@ section h1 {
 h1,
 h2 {
   font-size: min(1.8vh, 1.8vw);
+  font-family: headings;
 }
 
 h3 {
   font-size: min(1.5vh, 1.5vw);
+  font-family: headings;
+}
+
+p,
+.projectDescription {
+  font-family: content;
 }
 
 .projects {
