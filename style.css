@@ -69,7 +69,7 @@ header {
   padding: 1vh 0.5vw;
 }
 
-.about > p,
+p,
 .contacts {
   font-size: min(1.1vh, 1.1vw);
 }
@@ -212,4 +212,25 @@ footer > img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1;
   object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .projectDescription,
+  about > .aboutDescription,
+  p {
+    font-size: calc(min(0.5vh, 0.5vw) + 8px);
+  }
+
+  h1,
+  h2 {
+    font-size: calc(min(1vh, 1vw) + 8px);
+  }
+
+  h3 {
+    font-size: calc(min(0.8vh, 0.8vw) + 8px);
+  }
 }
